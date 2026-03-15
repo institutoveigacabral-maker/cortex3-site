@@ -1,29 +1,48 @@
-# Site Institucional
+# Cortex3 -- Site Institucional
 
-Site institucional com páginas de apresentação do Grupo, modelo Figital, Portfólio de marcas, Governança corporativa e Contato.
+![CI](https://github.com/institutoveigacabral-maker/cortex3-site/actions/workflows/ci.yml/badge.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-## Tech Stack
+Site institucional do grupo com paginas de apresentacao, modelo Figital, portfolio de marcas, governanca corporativa e contato. Construido com Hono + Cloudflare Workers para deploy edge.
 
-- React 19 + TypeScript
-- Vite + Cloudflare Workers (Hono)
+## Stack
+
+- Hono (Cloudflare Workers)
+- React + Vite + TypeScript
+- Zod (validacao)
 - Tailwind CSS
-- React Router
-- Lucide React (ícones)
 
-## Como rodar
+## Funcionalidades
+
+- Paginas institucionais (Grupo, Modelo, Portfolio, Governanca, Contato)
+- Rendering server-side via Cloudflare Workers
+- Design system com componentes reutilizaveis
+- Responsivo e otimizado para performance
+
+## Setup Local
 
 ```bash
-git clone https://github.com/institutoveigacabral-maker/my-new-app.git
-cd my-new-app
+git clone https://github.com/institutoveigacabral-maker/cortex3-site.git
+cd cortex3-site
 npm install
+cp .env.example .env.local  # configurar variaveis
 npm run dev
 ```
 
-## Estrutura
+## Testes
 
+```bash
+npm test
 ```
-src/
-  react-app/       # Frontend React (Home, Grupo, Figital, Portfolio, Governança, Contato)
-  shared/          # Tipos e utilitários compartilhados
-  worker/          # Backend Hono (Cloudflare Workers)
-```
+
+67 testes cobrindo logica de negocio, validacoes e utilitarios.
+
+
+
+## Contributing
+
+Ver [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Licenca
+
+MIT -- ver [LICENSE](LICENSE).
