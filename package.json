@@ -40,6 +40,8 @@
     "check": "tsc && vite build && wrangler deploy --dry-run",
     "dev": "vite",
     "knip": "knip",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx,js,jsx}\""
   }
 }
